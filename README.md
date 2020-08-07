@@ -28,9 +28,11 @@ This option is an automatic A. All you have to do is implement the FastSLAM algo
 
 ## Option 2 (2 parts, equal weight)
 
+For this option you'll have to do two problems.
+
 ### Part 1
 
-For this option you'll have to two choices: Implement one of the following algorithms: 
+First, Implement one of the following algorithms: 
 
 - A* - Implement the A* algorithm in Matlab. The input to the algorithm can be an adjacency matrix, which is easy to implement in Matlab. The graph will represent a grid world, where each cell connects to its 8 neighbors, with `1` dist to the adjacent ones and `2^.5` distance to the diagonal ones. Represent obstacles by removing edges to neighboring cells. 
 
