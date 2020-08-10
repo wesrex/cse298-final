@@ -15,6 +15,7 @@ Due by: 8/10 by end of day
 If you agree with the above, type your full name in the following space along with the date. Your exam **will not be graded** without this assent. When you are done, make your first commit with the commit message: "I, <your name>, agree to the ethics contract".
 
 *** Write name and date below ***
+Wesley Olsen 8/9/2020
 
 
 
