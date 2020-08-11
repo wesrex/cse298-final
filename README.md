@@ -16,7 +16,7 @@ If you agree with the above, type your full name in the following space along wi
 
 *** Write name and date below ***
 
-
+Wesley Olsen 8/10/2020
 
 *** Write name and date above ***
 
@@ -61,3 +61,5 @@ Choose one of the show-and-tell videos posted in our Slack channel. **You cannot
 There are really no wrong or right answers here. I just want you to show me that you understand the architecture of robots we talked about in this class, and to see if you can apply that knowledge to a real-world example. You may be completely wrong, but that's not the point of this question.
 
 Minimum: 200 words
+
+The cyan delivery robot is a rather standard automated robot.  Its purpose is to safely deliver one food from one location to another.  It accomplishes this by using sensors on the front of the car to see any potential obstacles like pedestrians or cars and either skirt around them or wait until it is safe to move again by using motors attached to wheels to pivot and move as seen from the demonstration video as it waits for a car to pass .  To find its way to the customers door it uses a gps from which I am guessing it is using dijkstras algorithm or more likely an A* algorithm to find the quickest way, with a heuristic approach of shortest total distance traveled (has a battery) and excludes any stairs as it does not have the capability to maneuver them.  AlthoughI have not found anything about it using an odometer (nor does it necessarily need one) but I would be surprised if it did not have one as it could much more confidently tell where it was reducing noise overall for its kalman filter.  For example if the gps starts to give incorrect readings, it would realize that although the gps says it is 2 miles away from where it actually is, the odometer would more accurately tell it that its wheels have only spun a ½ mile worth of distance (unless it is getting stolen which is a separate problem)  The combination of these three sensors should enable it to safely and efficiently navigate its way.  Other failure states could include certain weather such as fooding/large puddles which could be hard to detect with light sensors and would more likely be monitored by the user rather than having the robot figure it out
